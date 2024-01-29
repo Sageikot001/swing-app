@@ -12,6 +12,9 @@ const HeaderContainer = styled(Box)`
   justify-content: center;
   align-items: center;
   padding: 24px 80px;
+
+  @media (max-width: ${theme.breakpoints.values.md}px) {
+    padding: 16px 32px;
 `;
 
 const HeaderContent = styled(Box)`
