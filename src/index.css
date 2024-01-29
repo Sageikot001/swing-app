@@ -3,16 +3,9 @@
 html,
 body,
 #root,
-.app,
-.content {
+.app {
   height: 100%;
   width: 100%;
   margin: 0;
   font-family: 'Inter', sans-serif;
-}
-
-.app {
-  display: flex;
-  position: relative;
-  min-width: 1200px;
 }

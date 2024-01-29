@@ -1,29 +1,18 @@
-import './index.css';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
-import { PersistGate } from 'redux-persist/integration/react';
-import { ThemeProvider } from '@mui/material';
-import theme from './theme/index';
-import App from './App';
-import { persistor, store } from './redux/store';
-import { BrowserRouter } from 'react-router-dom';
+import "./index.css";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ThemeProvider } from "@mui/material";
+
+import App from "./App";
+import theme from "./theme/index";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    {/* <QueryClientProvider client={queryClient}> */}
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <ThemeProvider theme={theme}>
-            <BrowserRouter>
-              <App />
-            </BrowserRouter>
-          </ThemeProvider>
-        </PersistGate>
-      </Provider>
-    {/* </QueryClientProvider> */}
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );

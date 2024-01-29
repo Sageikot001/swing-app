@@ -1,12 +1,12 @@
-import { Typography } from "@mui/material";
 
+import HeaderSection from "./global/HeaderSection";
+import HeroSection from "./Components/HeroSection";
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        <Typography>Head</Typography>
-      </header>
+    <div className="app">
+        <HeaderSection/>
+        <HeroSection/>
     </div>
   );
 }
