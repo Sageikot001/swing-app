@@ -58,8 +58,6 @@ display: flex;
 gap: 32.85px;
 background-color: ${theme.palette.grey[100]};
 width: 100%;
-// align-items: center;
-// justify-items: center;
 height: 480px;
 border-radius: 16px;
 position: relative;
