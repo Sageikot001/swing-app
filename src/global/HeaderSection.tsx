@@ -12,7 +12,6 @@ const HeaderContainer = styled(Box)`
   justify-content: center;
   align-items: center;
   padding: 24px 80px;
-  box-sizing: ;
 `;
 
 const HeaderContent = styled(Box)`
