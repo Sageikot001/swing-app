@@ -19,43 +19,43 @@ const HeroWrapper = styled(Box)`
     align-items: center
     justify-items: center;
     `;
-    
-    const HeroContent = styled(Box)`
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    padding: 0px 32px;
-    position: relative;
-    `;
-    
-    const Badge = styled(Box)`
-    background-color: ${theme.palette.primary[50]};
-    color: ${theme.palette.primary[700]};
-    display: flex;
-    padding: 2px 8px;
+
+const HeroContent = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 0px 32px;
+  position: relative;
+`;
+
+const Badge = styled(Box)`
+  background-color: ${theme.palette.primary[50]};
+  color: ${theme.palette.primary[700]};
+  display: flex;
+  padding: 2px 8px;
+  align-items: center;
+  justify-items: center;
+  border-radius: 16px;
+  width: 269px;
+  position: absolute;
+  top: -40px;
+`;
+
+const HeroTextContent = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 760px;
+`;
+
+const HeroAction = styled(Box)`
+  display: flex;
+  gap: 12px;
+
+  @media (max-width: ${theme.breakpoints.values.md}px) {
     align-items: center;
     justify-items: center;
-    border-radius: 16px;
-    width: 269px;
-    position: absolute;
-    top: -40px;
-    `;
-    
-    const HeroTextContent = styled(Box)`
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    max-width: 760px;
-    `;
-    
-    const HeroAction = styled(Box)`
-    display: flex;
-    gap: 12px;
-    
-    @media (max-width: ${theme.breakpoints.values.md}px) {
-      align-items: center;
-      justify-items: center;
-    }
+  }
 `;
 
 const HeroImages = styled(Box)`
@@ -162,12 +162,12 @@ const HeroSection = () => {
           </HeroAction>
         </HeroContent>
       </HeroWrapper>
-        <HeroImages>
-          <ImageBackground>
-            <Man src={MaleDriver} alt="Male Driver" />
-            <Woman src={FemaleDriver} alt="Male Driver" />
-          </ImageBackground>
-        </HeroImages>
+      <HeroImages>
+        <ImageBackground>
+          <Man src={MaleDriver} alt="Male Driver" />
+          <Woman src={FemaleDriver} alt="Male Driver" />
+        </ImageBackground>
+      </HeroImages>
     </>
   );
 };

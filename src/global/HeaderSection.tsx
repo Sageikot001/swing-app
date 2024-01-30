@@ -23,9 +23,9 @@ const HeaderContent = styled(Box)`
 `;
 
 const LeftContent = styled(Box)`
-    display: flex;
-    gap: 32px;
-`
+  display: flex;
+  gap: 32px;
+`;
 
 const HeaderSection = () => {
   return (
@@ -34,10 +34,18 @@ const HeaderSection = () => {
         <HeaderContent>
           <LeftContent>
             <Logo />
-            <Typography variant="body2" fontWeight={600} color={theme.palette.text.secondary}>
+            <Typography
+              variant="body2"
+              fontWeight={600}
+              color={theme.palette.text.secondary}
+            >
               About Us
             </Typography>
-            <Typography variant="body2" fontWeight={600} color={theme.palette.text.secondary}>
+            <Typography
+              variant="body2"
+              fontWeight={600}
+              color={theme.palette.text.secondary}
+            >
               Trips for today
             </Typography>
           </LeftContent>

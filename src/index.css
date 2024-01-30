@@ -4,8 +4,14 @@ html,
 body,
 #root,
 .app {
+  box-sizing: border-box;
+  max-width: 1200px; /* Set your preferred maximum width */
   height: 100%;
   width: 100%;
   margin: 0;
   font-family: 'Inter', sans-serif;
+  margin: 0 auto;    /* Center the content within the maximum width */
 }
+
+/* body {
+} */
